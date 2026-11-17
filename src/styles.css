@@ -51,7 +51,7 @@ img, video { display: block; max-width: 100%; }
 .section-kicker { margin: 0 0 21px; color: var(--muted-2); font-size: 11.5px; text-transform: uppercase; }
 .section-kicker span { color: var(--blue-bright); margin-right: 7px; }
 .section-heading h2, .fitness-copy h2, .contact-heading-grid h2 { margin: 0; color: var(--text); font-family: 'Space Grotesk', sans-serif; font-size: clamp(3.1rem, 6.678vw, 6.25rem); line-height: .97; letter-spacing: -.075em; font-weight: 500; }
-.section-heading h2 em, .fitness-copy h2 em, .contact-heading-grid h2 em, .hero-copy h1 em, .contact-direct h3 em, .fitness-media-heading h3 em { color: transparent; background: linear-gradient(108deg, #f5f6fa 0%, #aebdff 42%, #8b7cff 88%); background-clip: text; -webkit-background-clip: text; font-style: normal; }
+.section-heading h2 em, .fitness-copy h2 em, .contact-heading-grid h2 em, .hero-copy h1 em, .contact-direct h3 em { color: transparent; background: linear-gradient(108deg, #f5f6fa 0%, #aebdff 42%, #8b7cff 88%); background-clip: text; -webkit-background-clip: text; font-style: normal; }
 .section-lede { max-width: 440px; margin: 0 0 5px; color: var(--muted); font-size: 14.84px; line-height: 1.85; }
 .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; padding: 0 20px; border-radius: 4px; font-size: 11.66px; font-weight: 700; transition: transform .24s ease, background .24s ease, border-color .24s ease, color .24s ease; }
 .button:hover { transform: translateY(-3px); }
@@ -244,13 +244,6 @@ img, video { display: block; max-width: 100%; }
 .fitness-focus-list { display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 14px; }
 .fitness-focus-list span { display: flex; align-items: center; gap: 8px; color: #c0c3cd; font-size: 11px; }
 .fitness-focus-list i { color: #8780d9; font-family: 'DM Mono', monospace; font-size: 9px; font-style: normal; }
-.fitness-media-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 25px; margin: 62px 0 25px; }
-.fitness-media-heading .section-kicker { margin-bottom: 12px; }
-.fitness-media-heading h3 { margin: 0; color: var(--text); font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4.24vw, 3.4rem); font-weight: 500; line-height: 1.02; letter-spacing: -.06em; }
-.fitness-media-heading > p { max-width: 280px; margin: 0 0 4px; color: #898e9c; font-size: 11.5px; line-height: 1.8; }
-.fitness-grid { grid-template-columns: 1.15fr .85fr; align-items: start; gap: 18px; }
-.fitness-grid .project-image-wrap { aspect-ratio: 1.55; }
-.fitness-card-tall .project-image-wrap { aspect-ratio: 1.27; }
 .fitness-disclaimer { display: flex; align-items: center; gap: 9px; margin: 24px 0 0; color: #797e8c; font-size: 11px; }
 .fitness-disclaimer .placeholder-note-dot { width: 5px; height: 5px; }
 
@@ -489,11 +482,6 @@ img, video { display: block; max-width: 100%; }
   .fitness-focus-row { grid-template-columns: 1fr; gap: 15px; padding: 18px 0; }
   .fitness-focus-list { column-gap: 14px; row-gap: 12px; }
   .fitness-focus-list span { font-size: 10px; }
-  .fitness-media-heading { display: block; margin: 42px 0 19px; }
-  .fitness-media-heading h3 { font-size: 2.25rem; }
-  .fitness-media-heading > p { margin-top: 13px; }
-  .fitness-grid { grid-template-columns: 1fr; gap: 20px; }
-  .fitness-grid .project-image-wrap, .fitness-card-tall .project-image-wrap { aspect-ratio: 1.45; }
   .fitness-disclaimer { align-items: flex-start; font-size: 10px; line-height: 1.6; }
   .contact-section { padding: 77px 0 82px; }
   .contact-topline { font-size: 9px; }

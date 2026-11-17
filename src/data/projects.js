@@ -59,22 +59,3 @@ export const designCategories = [
   'Marketing Creatives',
   'Creative Artwork',
 ];
-
-export const fitnessProjects = [
-  {
-    id: 'fitness-01',
-    title: 'Gym experience',
-    category: 'Gym Experience',
-    image: asset('fitness-editorial.webp'),
-    placeholder: true,
-    description: 'Placeholder for Ahmed’s own gym experience and training imagery.',
-  },
-  {
-    id: 'fitness-02',
-    title: 'Training content',
-    category: 'Training Content',
-    image: asset('fitness-training.webp'),
-    placeholder: true,
-    description: 'Placeholder for practical training content or fitness activities.',
-  },
-];

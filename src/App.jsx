@@ -40,7 +40,7 @@ export default function App() {
           <div className="work-stack">
             <VideoEditing onProjectOpen={openPreview} />
             <GraphicDesign onProjectOpen={openPreview} />
-            <Fitness onProjectOpen={openPreview} />
+            <Fitness />
           </div>
           <Contact />
         </main>

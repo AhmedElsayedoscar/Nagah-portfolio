@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion';
 import { Activity, ArrowUpRight, Dumbbell } from 'lucide-react';
-import { fitnessProjects } from '../data/projects';
-import ProjectCard from './ProjectCard';
 
 const focusAreas = ['Gym Experience', 'Fitness Activities', 'Training Content', 'Fitness Knowledge', 'Personal Fitness Projects'];
 
-export default function Fitness({ onProjectOpen }) {
+export default function Fitness() {
   return (
     <section id="fitness" className="fitness-section section-shell field-section">
       <div className="container">
@@ -27,12 +25,7 @@ export default function Fitness({ onProjectOpen }) {
         </div>
 
         <div className="fitness-focus-row"><span className="fitness-focus-title">AREAS TO EXPLORE</span><div className="fitness-focus-list">{focusAreas.map((area, index) => <span key={area}><i>0{index + 1}</i>{area}</span>)}</div></div>
-
-        <div className="fitness-media-heading"><div><p className="section-kicker"><span>03A</span> / FITNESS MEDIA</p><h3>Work in progress.<br /><em>Experience in practice.</em></h3></div><p>The featured photo is personal; the gallery below still uses sample visuals.</p></div>
-        <div className="project-grid fitness-grid">
-          {fitnessProjects.map((project, index) => <ProjectCard key={project.id} project={project} type="image" index={index} onOpen={onProjectOpen} className={index === 0 ? 'fitness-card-tall' : ''} />)}
-        </div>
-        <p className="fitness-disclaimer"><span className="placeholder-note-dot" />No qualifications or certifications are claimed here. The gallery images are illustrative placeholders only.</p>
+        <p className="fitness-disclaimer"><span className="placeholder-note-dot" />No qualifications or certifications are claimed here.</p>
       </div>
     </section>
   );
