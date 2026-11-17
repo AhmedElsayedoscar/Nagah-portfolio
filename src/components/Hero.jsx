@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { ArrowDown, ArrowDownRight, ArrowUpRight, Sparkles } from 'lucide-react';
 import { profile } from '../data/profile';
 
+const portraitUrl = `${import.meta.env.BASE_URL}images/ahmed-nagah-profile.webp`;
+
 const fadeUp = {
   hidden: { opacity: 0, y: 26 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.72, ease: [0.22, 1, 0.36, 1] } },
@@ -31,9 +33,8 @@ export default function Hero() {
           <div className="hero-visual-orbit orbit-one" />
           <div className="hero-visual-orbit orbit-two" />
           <div className="hero-image-frame">
-            <div className="hero-image-art" aria-hidden="true"><div className="art-glow art-glow-a" /><div className="art-glow art-glow-b" /><div className="art-grid" /></div>
-            <div className="portrait-placeholder-label"><span /> PROFILE IMAGE PLACEHOLDER</div>
-            <div className="portrait-initials">AN</div>
+            <img className="hero-portrait" src={portraitUrl} alt="Portrait of Ahmed Nagah" fetchPriority="high" />
+            <div className="portrait-label"><span /> PROFILE / 01</div>
             <div className="portrait-bottomline"><span>AHMED NAGAH</span><span dir="rtl" lang="ar">أحمد نجاح</span></div>
           </div>
           <div className="floating-index"><span>CREATIVE PRACTICE</span><strong>01 <i>/</i> 03</strong></div>
