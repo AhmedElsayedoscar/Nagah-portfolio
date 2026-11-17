@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Play } from 'lucide-react';
 
-export default function ProjectCard({ project, type = 'image', index = 0, onOpen, className = '' }) {
+export default function ProjectCard({ project, type = 'image', index = 0, onOpen, className = '', id }) {
   const isVideo = type === 'video';
   return (
     <motion.button
       type="button"
+      id={id}
       className={`project-card ${isVideo ? 'project-card-video' : ''} ${className}`}
       onClick={() => onOpen?.({ project, type })}
       initial={{ opacity: 0, y: 24 }}

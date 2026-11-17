@@ -52,7 +52,6 @@ export const designProjects = [
 ];
 
 export const designCategories = [
-  'All work',
   'Social Media Designs',
   'Branding & Visual Identity',
   'Advertising Designs',

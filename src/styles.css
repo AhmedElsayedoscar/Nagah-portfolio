@@ -43,7 +43,7 @@ img, video { display: block; max-width: 100%; }
 .section-shell { position: relative; overflow: hidden; }
 .work-stack { position: relative; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; margin-bottom: 55px; }
-.section-kicker, .eyebrow, .field-topline, .contact-topline, .footer-bottom, .filter-label, .experience-index, .floating-index, .hero-bottom, .hero-side-note, .portrait-label, .portrait-bottomline, .fitness-manifesto-label, .fitness-manifesto-foot, .fitness-focus-title, .placeholder-tag, .project-image-index, .modal-category, .preview-modal-top, .contact-direct-label, .contact-method small, .form-heading > span, .contact-form label, .social-setup, .about-footnote {
+.section-kicker, .eyebrow, .field-topline, .contact-topline, .footer-bottom, .experience-index, .floating-index, .hero-bottom, .hero-side-note, .portrait-label, .portrait-bottomline, .fitness-manifesto-label, .fitness-manifesto-foot, .fitness-focus-title, .placeholder-tag, .project-image-index, .modal-category, .preview-modal-top, .contact-direct-label, .contact-method small, .form-heading > span, .contact-form label, .social-setup, .about-footnote {
   font-family: 'DM Mono', monospace;
   font-weight: 400;
   letter-spacing: .09em;
@@ -200,11 +200,16 @@ img, video { display: block; max-width: 100%; }
 .design-intro .section-lede { max-width: 382px; }
 .design-aside-mark { display: flex; align-items: center; gap: 9px; color: #d4d4e1; font-family: 'Space Grotesk', sans-serif; font-size: 16.96px; letter-spacing: -.04em; }
 .design-aside-mark i { color: #85899a; font-family: 'DM Mono', monospace; font-size: 9px; font-style: normal; letter-spacing: .11em; }
-.filter-row { display: flex; align-items: center; gap: 17px; margin-bottom: 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-.filter-label { flex: 0 0 auto; color: #a0a4b2; font-size: 12px; font-weight: 500; }
-.filter-scroll { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
-.filter-chip { flex: 0 0 auto; min-height: 38px; padding: 0 14px; border: 1px solid transparent; border-radius: 2px; color: #b2b5c1; background: transparent; font-size: 13px; white-space: nowrap; cursor: pointer; transition: color .2s ease, border-color .2s ease, background .2s ease; }
-.filter-chip:hover, .filter-chip.active { color: #f0f1f7; border-color: rgba(147,150,234,.27); background: rgba(127,118,223,.09); }
+.design-category-index { margin-bottom: 27px; }
+.design-category-index-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; color: #a0a4b2; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .12em; }
+.design-category-index-heading span:last-child { color: #707586; }
+.design-category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.design-category-card { position: relative; display: flex; min-height: 112px; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 10px; padding: 15px 17px; border: 1px solid rgba(238,242,255,.15); color: inherit; background: linear-gradient(145deg, rgba(255,255,255,.025), rgba(255,255,255,.006)); transition: transform .22s ease, border-color .22s ease, background .22s ease; }
+.design-category-card:hover { transform: translateY(-2px); border-color: rgba(142,156,255,.46); background: linear-gradient(145deg, rgba(92,109,187,.12), rgba(255,255,255,.012)); }
+.design-category-number { color: #8289a0; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .11em; }
+.design-category-name { max-width: calc(100% - 18px); color: #e5e6ee; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: -.025em; }
+.design-category-arrow { position: absolute; top: 14px; right: 14px; color: #72798d; transition: color .2s ease, transform .2s ease; }
+.design-category-card:hover .design-category-arrow { color: var(--blue-bright); transform: translate(2px, -2px); }
 .design-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; column-gap: 18px; row-gap: 25px; }
 .design-grid .project-image-wrap { aspect-ratio: .89; }
 .design-grid .project-card:nth-child(3n + 2) { margin-top: 34px; }
@@ -368,9 +373,8 @@ img, video { display: block; max-width: 100%; }
   .video-grid { gap: 13px; }
   .project-card-title { font-size: 16.96px; }
   .project-card-description { font-size: 11px; }
-  .filter-scroll { flex-wrap: nowrap; overflow-x: auto; padding: 0 0 5px; scrollbar-width: thin; }
-  .filter-row { align-items: flex-start; }
-  .filter-label { padding-top: 9px; }
+  .design-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .design-category-card { min-height: 106px; }
   .fitness-intro-grid { grid-template-columns: 1fr .95fr; gap: 28px; }
   .fitness-photo-panel { max-height: 600px; }
   .fitness-focus-row { grid-template-columns: 130px 1fr; }
@@ -458,10 +462,12 @@ img, video { display: block; max-width: 100%; }
   .design-intro { align-items: flex-start; gap: 13px; }
   .design-intro .section-lede { margin-top: 15px; }
   .design-aside-mark { font-size: 13.78px; }
-  .filter-row { display: block; margin-bottom: 15px; }
-  .filter-label { display: block; margin-bottom: 10px; font-size: 12px; }
-  .filter-scroll { width: calc(100vw - 36px); margin-right: -18px; padding-right: 18px; gap: 6px; -webkit-overflow-scrolling: touch; overscroll-behavior-inline: contain; }
-  .filter-chip { min-height: 42px; padding-inline: 13px; font-size: 13px; }
+  .design-category-index { margin-bottom: 21px; }
+  .design-category-index-heading { font-size: 8px; }
+  .design-category-grid { gap: 7px; }
+  .design-category-card { min-height: 104px; padding: 12px; }
+  .design-category-name { font-size: 12.5px; }
+  .design-category-arrow { top: 11px; right: 11px; width: 14px; height: 14px; }
   .design-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 21px 11px; }
   .design-grid .project-image-wrap { aspect-ratio: .82; }
   .design-grid .project-card:nth-child(3n + 2), .design-grid .project-card:nth-child(3n + 3) { margin-top: 0; }
@@ -527,7 +533,8 @@ img, video { display: block; max-width: 100%; }
   .hero-actions { gap: 5px; }
   .hero-actions .button { padding-inline: 10px; font-size: 10px; }
   .specialty-list { font-size: 8px; gap: 7px; }
-  .filter-scroll { width: calc(100vw - 28px); margin-right: -14px; padding-right: 14px; }
+  .design-category-card { min-height: 108px; padding: 11px; }
+  .design-category-name { font-size: 11.5px; }
   .field-topline { letter-spacing: .04em; }
   .contact-direct { padding: 17px; }
 }
