@@ -9,7 +9,7 @@ export default function Footer() {
         <p>Turning ideas into<br /><em>visual experiences.</em></p>
         <a className="footer-contact" href={profile.whatsappUrl} target="_blank" rel="noreferrer">Start a conversation <ArrowUpRight size={15} /></a>
       </div>
-      <div className="container footer-bottom"><span>© {new Date().getFullYear()} AHMED NAGAH</span><span>VIDEO · DESIGN · FITNESS</span><a href="#home">BACK TO TOP ↑</a></div>
+      <div className="container footer-bottom"><span>© {new Date().getFullYear()} AHMED NAGAH</span><span className="footer-credit">Designed &amp; Developed by <strong>Eng. Ahmed El-Sayed</strong></span><a href="#home">BACK TO TOP ↑</a></div>
     </footer>
   );
 }
