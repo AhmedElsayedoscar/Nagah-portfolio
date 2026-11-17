@@ -300,6 +300,7 @@ img, video { display: block; max-width: 100%; }
 .footer-credit strong { color: #aeb4c7; font-weight: 500; }
 .footer-bottom a { color: #989dac; }
 .floating-actions { position: fixed; z-index: 45; right: 23px; bottom: 23px; display: flex; align-items: center; gap: 9px; }
+.floating-actions.is-footer-visible { display: none; }
 .floating-whatsapp { display: inline-flex; align-items: center; gap: 9px; min-height: 43px; padding: 0 14px; border: 1px solid rgba(111,229,173,.32); border-radius: 24px; color: #dfffee; background: rgba(10,22,17,.88); box-shadow: 0 10px 30px rgba(0,0,0,.28); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .09em; transition: transform .2s ease, background .2s ease; }
 .floating-whatsapp svg { color: var(--green); }
 .floating-whatsapp:hover { transform: translateY(-3px); background: rgba(17,43,31,.96); }
